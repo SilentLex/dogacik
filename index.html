@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<audio id="music" src="music.mp3" loop></audio>
+
+<!-- SES BUTONU -->
+<button id="soundBtn" class="sound-btn">🔇</button>
+
+<div class="wrapper">
+  <svg class="heart" id="heart" viewBox="0 0 512 512">
+    <path d="
+      M256 464
+      S48 336 48 176
+      C48 96 112 48 176 48
+      C220 48 248 72 256 96
+      C264 72 292 48 336 48
+      C400 48 464 96 464 176
+      C464 336 256 464 256 464
+      Z
+    "/>
+  </svg>
+
+  <div class="text">Dokun…</div>
+</div>
+
+<!-- MESAJ -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <p>
+      İnsanların birbirini gerçekten tanımaktan kaçtığı bu dünyada,<br>
+      ne kadar zaman gerekirse gereksin…<br>
+      tanımaya değer tek kişinin sen olduğunu hissediyorum.
+    </p>
+    <button id="close">Kapat</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
