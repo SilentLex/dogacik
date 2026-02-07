@@ -6,8 +6,9 @@
 
 body {
   background: radial-gradient(circle at center, #14000a, #000);
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -115,3 +116,84 @@ canvas {
   border-radius: 20px;
   cursor: pointer;
 }
+
+/* ================= ALBÜM ================= */
+
+.album {
+  position: relative;
+  z-index: 3;
+  padding: 120px 0 160px;
+  width: 100%;
+}
+
+.album-intro {
+  max-width: 720px;
+  margin: 0 auto 120px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* FOTO SATIRI */
+.photo-row {
+  max-width: 900px;
+  margin: 0 auto 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-row.left {
+  align-items: flex-start;
+}
+
+.photo-row.right {
+  align-items: flex-end;
+}
+
+.photo-row img {
+  width: 320px;
+  border-radius: 18px;
+  box-shadow:
+    0 0 30px rgba(255,42,109,0.35);
+}
+
+/* FOTO ALTI YAZI */
+.caption {
+  max-width: 320px;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ================= CUSTOM CURSOR ================= */
+
+body {
+  cursor: none; /* varsayılan imleci gizle */
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff2a6d;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 10px rgba(255,42,109,0.8),
+    0 0 25px rgba(255,42,109,0.6);
+}
+
+
+.heart,
+button,
+a {
+  cursor: none !important;
+}
+
